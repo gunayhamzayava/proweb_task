@@ -199,7 +199,6 @@ main {
     padding: 13px;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -265,7 +264,14 @@ main {
 .logos img:hover {
     transform: scale(1.1);
     background-color: #06A4ED;
-    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+    box-shadow: 0 4px 6px rgba(6, 164, 237, 0.3),
+        0 8px 20px rgba(6, 164, 237, 0.5);
+    outline: 3px solid #06A4ED;
+    outline-offset: 4px;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
+        box-shadow 0.4s ease-in-out,
+        outline 0.4s ease-in-out;
+
 }
 
 .employees-section {
@@ -760,7 +766,7 @@ footer p {
         margin-left: 0;
     }
 
-    .menu-columns{
+    .menu-columns {
         gap: 20px;
     }
 

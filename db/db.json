@@ -1,0 +1,28 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Türkan Abdullayeva",
+            "company": "Istanbul",
+            "position": "Menecer, Proweb agency"
+        },
+        {
+            "id": 2,
+            "name": "Fərid Əliyev",
+            "company": "Senorita",
+            "position": "Frontend Developer, Senorita"
+        },
+        {
+            "id": 3,
+            "name": "Nərmin Cəlilova",
+            "company": "Audi",
+            "position": "Backend Developer, Audi"
+        },
+        {
+            "id": 4,
+            "name": "Orxan Əhmədov",
+            "company": "Adell",
+            "position": "İnsan Resursları Meneceri,  ABC company"
+        }
+    ]
+}

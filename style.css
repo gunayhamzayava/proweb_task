@@ -516,11 +516,15 @@ footer p {
         display: none;
         cursor: pointer;
         font-size: 26px;
-        position: absolute;
-        top: 20px;
-        left: 60px;
         z-index: 2001;
     }
+
+    .logo-header,
+    .lang-auth {
+        position: relative;
+        z-index: 2001;
+    }
+
 
     .logo-header {
         display: flex;
@@ -535,7 +539,7 @@ footer p {
     .menu {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         width: 100%;
         height: 100vh;
         background-color: #fff;
@@ -544,18 +548,17 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
         z-index: 1000;
-        transform: translateY(-200%);
-        transition: transform 0.4s ease-in-out;
+        transition: left 0.4s ease-in-out;
     }
 
     .menu.active {
-        transform: translateY(0);
+        left: 0;
     }
 
     .menu li {
         width: 100%;
-        font-size: 18px;
-        padding: 15px 10px;
+        font-size: 16px;
+        padding: 6px 10px;
         border-bottom: 1px solid #ddd;
         transition: all 0.3s ease-in-out;
     }
@@ -565,9 +568,9 @@ footer p {
     }
 
     .auth-btn {
-        font-size: 20px;
+        font-size: 16px;
         width: 150px;
-        padding: 10px 0;
+        padding: 5px 0;
         border-radius: 30px;
         margin-right: 10px;
     }
@@ -660,7 +663,7 @@ footer p {
         padding: 6px;
     }
 
-     .company-logo-istanbul-1 {
+    .company-logo-istanbul-1 {
         top: 60%;
         left: 60%;
     }
@@ -752,6 +755,13 @@ footer p {
     .footer-li {
         width: 100%;
         margin-top: 30px;
+        justify-content: space-between;
+        gap: 45px;
+        margin-left: 0;
+    }
+
+    .menu-columns{
+        gap: 20px;
     }
 
     .footer-info {

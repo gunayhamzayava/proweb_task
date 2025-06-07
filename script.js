@@ -15,10 +15,23 @@ closeIcon.addEventListener("click", () => {
   closeIcon.style.display = "none";
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    menu.classList.remove("active");
+    hamburger.style.display = "none";
+    closeIcon.style.display = "none";
+  } else {
+    hamburger.style.display = "block";
+    closeIcon.style.display = "none";
+  }
+});
+
 // employee card
 
 let employees = [];
 const defaultCompany = "Istanbul";
+
+// json-server --watch db/db.json --port 3000 - emrini calisdirin zehmet olmasa terminalda , ona uygun yazmisam kodu 🙏🏻
 
 fetch("http://localhost:3000/employees")
   .then((res) => res.json())
@@ -55,6 +68,3 @@ function logoClick(employees) {
     });
   });
 }
-
-
-

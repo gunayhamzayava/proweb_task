@@ -68,7 +68,7 @@ nav {
     margin-right: 30px;
 }
 
-.logo-header{
+.logo-header {
     margin-left: 70px;
 }
 
@@ -390,14 +390,14 @@ footer {
 .footer-li {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 130px;
     gap: 35px;
     flex: 1;
 }
 
-.footer-menu,
-.footer-legal {
-    flex: 1 1 45%;
+
+.footer-menu{
+    margin-right: 50px;
 }
 
 .brand {
@@ -616,6 +616,17 @@ footer p {
         margin-bottom: 10px;
     }
 
+    .card h3 {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+
 
     .rings-container {
         position: relative;
@@ -700,9 +711,8 @@ footer p {
     }
 
 
-
     .logos img:hover {
-        transform: translate(-50%, -50%) scale(1.1);
+        transform: scale(1.1) rotate(0deg);
         z-index: 2;
         background-color: #ddd;
     }

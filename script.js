@@ -41,7 +41,7 @@ fetch("http://localhost:3000/employees")
   })
   .catch((err) => console.error("Xeta bas verdi", err));
 
-function showCard(company, employees) {
+const showCard = (company, employees) => {
   const container = document.querySelector(".employee-card");
   container.innerHTML = "";
   const filtered = employees.filter((emp) => emp.company === company);
@@ -56,9 +56,9 @@ function showCard(company, employees) {
         <p>${emp.position}</p>
     </div>
   `;
-}
+};
 
-function logoClick(employees) {
+const logoClick = (employees) => {
   const logos = document.querySelectorAll(".logos img");
 
   logos.forEach((logo) => {
@@ -67,4 +67,4 @@ function logoClick(employees) {
       showCard(company, employees);
     });
   });
-}
+};

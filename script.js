@@ -15,8 +15,6 @@ closeIcon.addEventListener("click", () => {
   closeIcon.style.display = "none";
 });
 
-
-
 // employee card
 
 let employees = [];
@@ -25,16 +23,16 @@ const defaultCompany = "Istanbul";
 fetch("http://localhost:3000/employees")
   .then((res) => res.json())
   .then((data) => {
-    showEmployeesByCompany(defaultCompany, data);
-    setupLogoClickListeners(data);
+    showCard(defaultCompany, data);
+    logoClick(data);
   })
   .catch((err) => console.error("Xeta bas verdi", err));
 
-function showEmployeesByCompany(company, employees) {
+function showCard(company, employees) {
   const container = document.querySelector(".employee-card");
   container.innerHTML = "";
   const filtered = employees.filter((emp) => emp.company === company);
-  if (filtered.length === 0) return;
+  if (filtered.length == 0) return;
 
   const emp = filtered[0];
 
@@ -47,13 +45,16 @@ function showEmployeesByCompany(company, employees) {
   `;
 }
 
-function setupLogoClickListeners(employees) {
+function logoClick(employees) {
   const logos = document.querySelectorAll(".logos img");
 
   logos.forEach((logo) => {
     logo.addEventListener("click", () => {
       const company = logo.getAttribute("data-company");
-      showEmployeesByCompany(company, employees);
+      showCard(company, employees);
     });
   });
 }
+
+
+

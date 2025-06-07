@@ -68,6 +68,10 @@ nav {
     margin-right: 30px;
 }
 
+.logo-header{
+    margin-left: 70px;
+}
+
 .menu li {
     font-size: 18px;
 }
@@ -76,6 +80,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-right: 70px;
 }
 
 .lang span,
@@ -205,6 +210,20 @@ main {
 }
 
 
+.logos img:hover {
+    transform: scale(1.1);
+    background-color: #06A4ED;
+    box-shadow: 0 4px 6px rgba(6, 164, 237, 0.3),
+        0 8px 20px rgba(6, 164, 237, 0.5);
+    outline: 3px solid #06A4ED;
+    outline-offset: 4px;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
+        box-shadow 0.4s ease-in-out,
+        outline 0.4s ease-in-out;
+}
+
+
+
 .company-logo-istanbul-1 {
     top: 66%;
     left: 67%;
@@ -260,19 +279,6 @@ main {
     left: 74%;
 }
 
-
-.logos img:hover {
-    transform: scale(1.1);
-    background-color: #06A4ED;
-    box-shadow: 0 4px 6px rgba(6, 164, 237, 0.3),
-        0 8px 20px rgba(6, 164, 237, 0.5);
-    outline: 3px solid #06A4ED;
-    outline-offset: 4px;
-    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
-        box-shadow 0.4s ease-in-out,
-        outline 0.4s ease-in-out;
-
-}
 
 .employees-section {
     position: absolute;
@@ -529,6 +535,7 @@ footer p {
     .lang-auth {
         position: relative;
         z-index: 2001;
+        margin: 0;
     }
 
 
@@ -608,122 +615,141 @@ footer p {
         margin-bottom: 10px;
     }
 
-    .ring-1 {
-        width: 120px;
-        height: 120px;
-    }
-
-    .ring-2 {
-        width: 200px;
-        height: 200px;
-    }
-
-    .ring-3 {
-        width: 300px;
-        height: 300px;
-    }
-
-    .ring-4 {
-        width: 400px;
-        height: 400px;
-    }
-
-    .ring-5 {
-        width: 500px;
-        height: 500px;
-    }
-
-    .ring-6 {
-        width: 600px;
-        height: 600px;
-    }
-
-    .ring-7 {
-        width: 700px;
-        height: 700px;
-    }
-
-    .ring-8 {
-        width: 800px;
-        height: 800px;
-    }
 
     .rings-container {
-        height: auto;
-        min-height: 700px;
-        padding: 40px 0;
-    }
-
-    .ring-1 h4 {
-        font-size: 16px;
-        padding: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+        min-height: 400px;
     }
 
     .ring {
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
         left: 50%;
+        top: 50%;
+    }
+
+
+
+    .ring-2 {
+        width: 300px;
+        height: 300px;
+        opacity: 1;
+    }
+
+    .ring-3 {
+        width: 450px;
+        height: 450px;
+        opacity: 0.9;
+    }
+
+    .ring-4 {
+        width: 600px;
+        height: 600px;
+        opacity: 0.7;
+    }
+
+    .ring-5 {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0.6;
+    }
+
+    .ring-6 {
+        width: 1200px;
+        height: 1200px;
+        opacity: 0.5;
+    }
+
+    .ring-7 {
+        width: 1400px;
+        height: 1400px;
+        opacity: 0.4;
+    }
+
+    .ring-8 {
+        width: 1600px;
+        height: 1600px;
+        opacity: 0.3;
+    }
+
+
+    .logos {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 40px auto;
     }
 
     .logos img {
-        width: 60px;
-        height: 60px;
-        padding: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        transform-origin: center center;
+        transition: transform 0.3s ease;
+        background-color: white;
+        border-radius: 50%;
+        object-fit: contain;
     }
 
+
+
+    .logos img:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+        z-index: 2;
+        background-color: #ddd;
+    }
+
+
     .company-logo-istanbul-1 {
-        top: 60%;
-        left: 60%;
+        transform: rotate(0deg) translate(120px) rotate(-0deg);
     }
 
     .company-logo-istanbul-2 {
-        top: 65%;
-        left: 50%;
+        transform: rotate(120deg) translate(120px) rotate(-120deg);
     }
 
     .company-logo-istanbul-3 {
-        top: 70%;
-        left: 65%;
+        transform: rotate(170deg) translate(175px) rotate(-170deg);
     }
 
     .company-logo-istanbul-4 {
-        top: 55%;
-        left: 45%;
-    }
-
-    .company-logo-adell-1 {
-        top: 75%;
-        left: 70%;
-    }
-
-    .company-logo-adell-2 {
-        top: 15%;
-        left: 55%;
-    }
-
-    .company-logo-adell-3 {
-        top: 30%;
-        left: 50%;
-    }
-
-    .company-logo-audi-1 {
-        top: 45%;
-        left: 80%;
-    }
-
-    .company-logo-audi-2 {
-        top: 25%;
-        left: 75%;
-    }
-
-    .company-logo-audi-3 {
-        top: 35%;
-        left: 60%;
+        transform: rotate(45deg) translate(170px) rotate(-45deg);
     }
 
     .company-logo-senorita {
-        top: 20%;
-        left: 65%;
+        transform: rotate(180deg) translate(240px) rotate(-180deg);
     }
 
+    .company-logo-adell-1 {
+        transform: rotate(245deg) translate(200px) rotate(-245deg);
+    }
+
+    .company-logo-adell-2 {
+        transform: rotate(300deg) translate(160px) rotate(-300deg);
+    }
+
+    .company-logo-adell-3 {
+        transform: rotate(-10deg) translate(195px) rotate(10deg);
+    }
+
+    .company-logo-audi-1 {
+        transform: rotate(72deg) translate(220px) rotate(-72deg);
+    }
+
+    .company-logo-audi-2 {
+        transform: rotate(144deg) translate(220px) rotate(-144deg);
+    }
+
+    .company-logo-audi-3 {
+        transform: rotate(216deg) translate(205px) rotate(-216deg);
+    }
 
 
 

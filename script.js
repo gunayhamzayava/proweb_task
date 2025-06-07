@@ -31,7 +31,7 @@ window.addEventListener("resize", () => {
 let employees = [];
 const defaultCompany = "Istanbul";
 
-// json-server --watch db/db.json --port 3000 - emrini calisdirin zehmet olmasa terminalda , ona uygun yazmisam kodu 🙏🏻
+// json-server --watch db/db.json --port 3000 - emrini calisdirin zehmet olmasa terminalda, ona uygun yazmisam kodu 🙏🏻
 
 fetch("http://localhost:3000/employees")
   .then((res) => res.json())
